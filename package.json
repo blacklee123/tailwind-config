@@ -1,21 +1,55 @@
 {
   "name": "@qaq-public/tailwind-config",
   "type": "module",
-  "version": "1.0.2",
-  "description": "tailwind-config",
-  "author": "",
+  "version": "1.0.3",
+  "description": "shared tailwind config",
   "license": "ISC",
   "keywords": [],
-  "main": "tailwind.config.ts",
+  "homepage": "https://github.com/blacklee123/tailwind-config#readme",
+  "bugs": {
+    "url": "https://github.com/blacklee123/tailwind-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blacklee123/tailwind-config.git"
+  },
+  "author": {
+    "name": "blacklee123",
+    "email": "15656564262@163.com"
+  },
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "tailwindcss": "3",
-    "@iconify/tailwind": "1"
+    "@iconify/tailwind": "1",
+    "tailwindcss": "3"
   },
   "devDependencies": {
-    "typescript": "^5.4.5",
-    "@types/node": "^20.14.9"
+    "@types/node": "^20.14.9",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "legacyOutput": true,
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "dts": true
   }
 }
