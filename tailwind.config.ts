@@ -7,7 +7,6 @@ const config: Config = {
   important: true,
   content: [
     path.join(path.dirname(require.resolve('@qaq-public/components')), '**/*.{html,js,ts,vue,jsx,tsx}'),
-    path.join(path.dirname(require.resolve('@qaq-public/components-vue')), '**/*.{html,js,ts,vue,jsx,tsx}'),
     './src/**/*.{html,js,ts,vue,jsx,tsx}',
     './index.html',
   ],
