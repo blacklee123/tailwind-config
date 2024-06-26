@@ -1,10 +1,10 @@
 {
   "name": "@qaq-public/tailwind-config",
-  "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.5",
+  "private": false,
   "description": "shared tailwind config",
   "license": "ISC",
-  "keywords": [],
+  "keywords": ["tailwind"],
   "homepage": "https://github.com/blacklee123/tailwind-config#readme",
   "bugs": {
     "url": "https://github.com/blacklee123/tailwind-config/issues"
