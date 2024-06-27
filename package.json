@@ -1,6 +1,6 @@
 {
   "name": "@qaq-public/tailwind-config",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "private": false,
   "description": "shared tailwind config",
   "license": "ISC",
