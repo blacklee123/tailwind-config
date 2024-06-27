@@ -6,7 +6,7 @@ const config: Config = {
   darkMode: ['class'],
   important: true,
   content: [
-    path.join(path.dirname(require.resolve('@qaq-public/components')), '**/*.{html,js,ts,vue,jsx,tsx}'),
+    path.join(path.dirname(require.resolve('@qaq-public/components-react')), '**/*.{html,js,ts,vue,jsx,tsx}'),
     './src/**/*.{html,js,ts,vue,jsx,tsx}',
     './index.html',
   ],
